@@ -6,10 +6,10 @@ function testOptional(title, fn, isAsyncTest) {
           fn.call(this, done);
         } catch (err) {
           if (err === 'Not implemented') {
-            console.log('NOT IMPLEMENTED' + title);
+           
             this.test.skip();
           } else {
-            console.log('ERR UP' + title);
+           
             throw err;
           }
         }
